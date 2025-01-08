@@ -8,7 +8,7 @@ function Cart() {
         </button>
       </Link>
       <div className="flex justify-center items-center h-screen">
-        <h1 className="text-6xl">Working On it....</h1>
+        <h1 className="text-3xl md:text-6xl">Working On it....</h1>
       </div>
     </>
   );
