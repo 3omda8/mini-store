@@ -63,7 +63,7 @@ function CartPage() {
                 <div className="col-span-12 lg:col-span-10 detail w-full lg:pl-3">
                   <div className="flex flex-col justify-between h-full">
                     <div className="flex items-center justify-between w-full mb-4">
-                      <h5 className="font-manrope font-bold text-2xl leading-9 text-gray-900">
+                      <h5 className="font-manrope font-bold text-lg lg:text-2xl leading-9 text-gray-900">
                         {item.title}
                       </h5>
                       <button
