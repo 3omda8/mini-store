@@ -68,6 +68,7 @@ function Products() {
             title={product.title}
             price={product.price}
             src={product.image}
+            item={product}
           />
         ))}
       </div>

@@ -3,8 +3,10 @@ import { SearchContext } from "../context/SearchContext";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { CartContext } from "../context/CartContext";
 export default function Navbar() {
   const { searchQuery, setSearchQuery } = useContext(SearchContext);
+  const { cartItems } = useContext(CartContext);
 
   return (
     <nav className="bg-gray-800 p-4 grid grid-cols-[auto,auto,auto] justify-between gap-2">
@@ -36,6 +38,11 @@ export default function Navbar() {
               style={{ color: "#909cb2" }}
             />
           </button>
+          {cartItems.length > 0 && (
+            <span className="absolute top-2 right-5 bg-red-500 text-white text-sm font-bold rounded-full h-5 w-5 flex items-center justify-center">
+              {cartItems.length}
+            </span>
+          )}
         </Link>
       </div>
     </nav>

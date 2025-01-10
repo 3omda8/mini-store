@@ -27,6 +27,12 @@ function Subnav({ onFilter }) {
         >
           Jewelery
         </li>
+        <li
+          onClick={() => onFilter("electronics")}
+          className="hover:bg-slate-500 p-2 px-12 cursor-pointer md:px-20 lg:px-28"
+        >
+          Electronics
+        </li>
       </ul>
     </div>
   );
