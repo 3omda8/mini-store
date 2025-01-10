@@ -57,11 +57,11 @@ function CartPage() {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="max-lg:w-full lg:w-[180px] rounded-lg object-cover"
+                    className="max-lg:w-full lg:w-[160px] rounded-lg object-cover"
                   />
                 </div>
                 <div className="col-span-12 lg:col-span-10 detail w-full lg:pl-3">
-                  <div className="flex flex-col space-y-20">
+                  <div className="flex flex-col justify-between h-full">
                     <div className="flex items-center justify-between w-full mb-4">
                       <h5 className="font-manrope font-bold text-2xl leading-9 text-gray-900">
                         {item.title}
