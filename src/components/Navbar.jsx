@@ -39,7 +39,7 @@ export default function Navbar() {
             />
           </button>
           {cartItems.length > 0 && (
-            <span className="absolute top-2 right-5 bg-red-500 text-white text-sm font-bold rounded-full h-5 w-5 flex items-center justify-center">
+            <span className=" absolute ml-8 mb-10 bg-red-500 text-white text-sm font-bold rounded-full h-5 w-5 flex items-center justify-center">
               {cartItems.length}
             </span>
           )}
